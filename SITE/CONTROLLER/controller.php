@@ -1,7 +1,7 @@
 <?php
-	require"../../CONTROLLER/model.php";
-	require"../../CONTROLLER/service.php";
-	require"../../CONTROLLER/conexao.php";
+	require"../CONTROLLER/model.php";
+	require"../CONTROLLER/service.php";
+	require"../CONTROLLER/conexao.php";
 
 	$acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
