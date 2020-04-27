@@ -63,27 +63,30 @@
 
 	$Service = new Service($conexao ,$cNome ,$cEmail ,$tEsc ,$cEndereco ,$cSexo ,$cDataNasc,$cInstituicao ,$cCurso, $cSenha ,$cConfirmarSenha);
 	$RecuServi = $Service->recuperar();
-	}else if($acao == 'logar'){
-	
-	session_start();
 
+	}else if($acao == 'logar'){//LOGAR
+	session_start();
+	
+	include('conectar.php');
+	
 	if(empty($_POST['cEmail']) || empty($_POST['cSenha'])) {
 		header('Location: login.html');
 		exit();
 	}
+	
 
 	$cEmail = mysqli_real_escape_string($conexao, $_POST['cEmail']);
 	$cSenha = mysqli_real_escape_string($conexao, $_POST['cSenha']);
 
-	$query = "select cEmail, cSenha from Usuario_Comum where cEmail ='{$cEmail}' and cSenha = '{$cSenha}' ";
+	$query = "select cEmail from Usuario_Comum where cEmail = '{$cEmail}' and cSenha = ('{$cSenha}')";
 
 	$result = mysqli_query($conexao, $query);
 
 	$row = mysqli_num_rows($result);
 
 	if($row == 1) {
-		$_SESSION['usuario'] = $usuario;
-		header('Location: painel.php');
+		$_SESSION['cEmail'] = $cEmail;
+		header('Location: home.php');
 		exit();
 	} else {
 		$_SESSION['nao_autenticado'] = true;
