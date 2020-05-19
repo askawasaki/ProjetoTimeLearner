@@ -86,7 +86,7 @@
 
 	if($row == 1) {
 		$_SESSION['cEmail'] = $cEmail;
-		header('Location: home.php');
+		header('Location: PaginaInicial.html');
 		exit();
 	} else {
 		$_SESSION['nao_autenticado'] = true;
