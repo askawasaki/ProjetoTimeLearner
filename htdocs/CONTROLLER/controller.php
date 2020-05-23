@@ -1,7 +1,7 @@
 <?php
-	require"../CONTROLLER/model.php";
-	require"../CONTROLLER/service.php";
-	require"../CONTROLLER/conexao.php";
+	require"../../CONTROLLER/model.php";
+	require"../../CONTROLLER/service.php";
+	require"../../CONTROLLER/conexao.php";
 
 	$acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
@@ -86,7 +86,7 @@
 
 	if($row == 1) {
 		$_SESSION['cEmail'] = $cEmail;
-		header('Location: home.php');
+		header('Location: PaginaInicial.html');
 		exit();
 	} else {
 		$_SESSION['nao_autenticado'] = true;
