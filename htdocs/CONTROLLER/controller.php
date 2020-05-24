@@ -70,7 +70,7 @@
 	include('conectar.php');
 	
 	if(empty($_POST['cEmail']) || empty($_POST['cSenha'])) {
-		header('Location: login.php');
+		header('Location: login.html');
 		exit();
 	}
 	
@@ -90,7 +90,7 @@
 		exit();
 	} else {
 		$_SESSION['nao_autenticado'] = true;
-		header('Location: login.php?login=erro');
+		header('Location: login.html');
 		exit();
 	}
 
