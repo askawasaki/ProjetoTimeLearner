@@ -36,7 +36,7 @@ class Service {
 		$stmt->execute();
 	}
 	public function recuperar(){ //read
-		$query = "select ID_User, cNome, cEmail, tEsc, cEndereco, cSexo, cDataNasc, cInstituicao, cCurso from Usuario_Comum where cEmail = '{$_SESSION['cEmail']}' ";
+		$query = "select ID_User, cNome, cEmail, tEsc, cEndereco, cSexo, cDataNasc, cInstituicao, cCurso from Usuario_Comum where cEmail = '{$_SESSION['login']}' ";
 		$stmt = $this->conexao->prepare($query);
 		$stmt->execute();
 		return $stmt->fetchALL(PDO::FETCH_OBJ);

@@ -85,16 +85,20 @@
 	$row = mysqli_num_rows($result);
 
 	if($row == 1) {
-		$_SESSION['cEmail'] = $cEmail;
-		header('Location: PaginaInicial.html');
+		$_SESSION['autenticado'] = 'SIM';
+		$_SESSION['login'] = $cEmail;
+		header('Location: PaginaInicial.php');
 		exit();
 	} else {
-		$_SESSION['nao_autenticado'] = true;
+		$_SESSION['utenticado'] = 'NAO';
 		header('Location: login.html');
 		exit();
 	}
 
-}
+	}else if($acao == 'sair'){//desloga
+		session_destroy();
+		header('Location: index.html');
+	}
 
 
 ?>
