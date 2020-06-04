@@ -3,6 +3,7 @@
 	require"../../CONTROLLER/service.php";
 	require"../../CONTROLLER/conexao.php";
 
+	session_start();
 	$acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
 	if ($acao == 'inserir'){
@@ -48,7 +49,6 @@
 		}else{header('Location: cadastro.html');}
 	
 	}else if($acao == 'recuperar'){
-
 	$cNome = new CADASTRIC();
 	$cEmail = new CADASTRIC();
 	$tEsc = new CADASTRIC();
@@ -65,8 +65,6 @@
 	$RecuServi = $Service->recuperar();
 
 	}else if($acao == 'logar'){//LOGAR
-	session_start();
-	
 	include('conectar.php');
 	
 	if(empty($_POST['cEmail']) || empty($_POST['cSenha'])) {
@@ -90,14 +88,24 @@
 		header('Location: PaginaInicial.php');
 		exit();
 	} else {
-		$_SESSION['utenticado'] = 'NAO';
-		header('Location: login.html');
+		$_SESSION['autenticado'] = 'NAO';
+		header('Location: login.php');
 		exit();
 	}
 
 	}else if($acao == 'sair'){//desloga
 		session_destroy();
 		header('Location: index.html');
+
+	}else if($acao == 'recuperara'){//listar produtos
+		include('conectar.php');
+		if (empty($_GET)) {
+			$query = "select * from linha_do_tempo LIMIT 20";
+		}else{
+		$query = "select * from linha_do_tempo where Nome_Do_Conteudo LIKE '%".$_GET['busca']."%' LIMIT 20";
+		}
+		$result = mysqli_query($conexao, $query);
+
 	}
 
 

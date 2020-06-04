@@ -1,5 +1,4 @@
 <?php
-session_start();
 class Service {
 	private $conexao;
 	private $cNome;
