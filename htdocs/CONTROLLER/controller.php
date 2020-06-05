@@ -45,7 +45,7 @@
 			$Service = new Service($conexao,$cNome ,$cEmail ,$tEsc ,$cEndereco  ,$cSexo ,$cDataNasc,$cInstituicao ,$cCurso ,$cSenha ,$cConfirmarSenha);
 			$Service->inserir();
 
-			header('Location: login.html');
+			header('Location: login.php');
 		}else{header('Location: cadastro.html');}
 	
 	}else if($acao == 'recuperar'){
@@ -68,7 +68,7 @@
 	include('conectar.php');
 	
 	if(empty($_POST['cEmail']) || empty($_POST['cSenha'])) {
-		header('Location: login.html');
+		header('Location: login.php');
 		exit();
 	}
 	
