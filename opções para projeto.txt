@@ -1,0 +1,48 @@
+layout fixo e liquido
+https://developers.google.com/identity/sign-in/web?hl=en
+https://developers.google.com/search?hl=en
+https://cloud.google.com/web-risk?hl=en
+https://developers.google.com/web
+
+Efeitos
+Parallax
+
+Padronizar as configs de cada browser
+https://necolas.github.io/normalize.css/
+
+sites para exemplos de imagens
+http://lorempixel.com
+https://picsum.photos
+
+sites para exemplos de textos
+https://www.lipsum.com
+
+outras opcoes de fontes
+https://fonts.google.com
+https://www.dafont.com/pt/
+
+Cores 
+em hexadecimal, RGB e HSL
+https://htmlcolorcodes.com
+em rgb()
+https://www.w3schools.com/colors/colors_rgb.asp
+conversor de hex para rgb e rgb para hex
+https://www.webfx.com/web-design/hex-to-rgb/
+
+para programacao web
+https://webdesigner.withgoogle.com
+
+para pesquisas
+https://search.google.com/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=home
+
+para marketing
+https://marketingplatform.google.com/about/optimize/?utm_medium=referral-internal&utm_source=google-products&utm_campaign=product-cross-promo&utm_content=optimize-icon
+
+para cursos online
+https://learndigital.withgoogle.com/ateliedigital/courses
+https://www.udemy.com
+https://www.cursoemvideo.com
+
+para dominios
+https://domains.google.com/
+https://www.hostinger.com.br/precos	

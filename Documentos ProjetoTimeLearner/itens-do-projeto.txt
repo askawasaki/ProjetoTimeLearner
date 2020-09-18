@@ -1,0 +1,16 @@
+*Itens do projeto*
+- Modelo DER, logico e fisico do banco de dados
+- Páginas do site em progresso
+- Banco de dados
+- Caso de uso
+- Canvas
+- Slides de apresentação
+- Linha do tempo
+- Host(000webhost)
+- Persona
+- Requisitos do sistema
+
+versao de aplicativo 1.0.0
+release 1 mudar algo de grande importancia(layout)
+feature 0 adicionar ferramentas
+fix     0 arrumar bugs
