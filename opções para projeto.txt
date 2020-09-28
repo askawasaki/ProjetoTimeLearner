@@ -35,6 +35,12 @@ https://www.webfx.com/web-design/hex-to-rgb/
 Para Icones
 https://fontawesome.com
 
+compatibilidades
+https://autoprefixer.github.io/
+https://caniuse.com/?search=display
+compatibilidade do explorer com flexbox \/
+https://github.com/jonathantneal/flexibility
+
 para programacao web
 https://webdesigner.withgoogle.com
 
