@@ -1,0 +1,17 @@
+1- 
+2- 
+3- implementar icones
+4- posição do codigo(título, conteúdo e barra de navegacao)
+5- retirar o banco de dados correto
+6- colocar algo como patreon
+
+Andre
+retirar login
+revisar o bd
+
+Igor
+Design do site
+
+Rogerio
+Editar o Readme.md
+revisar e organizar o codigo
